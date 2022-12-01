@@ -26,7 +26,7 @@ const Project = ({ project }) => {
               <a href={deploy}>deployment</a>
             </button>
 
-            <button className='flex  py-3 px-5 space-x-3 border-2 border-gray-300 rounded-lg shadow-sm hover:bg-opacity-30 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-150'>
+            <button className='flex py-3 px-5 space-x-3 border-2 border-gray-300 rounded-lg shadow-sm hover:bg-opacity-30 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-150'>
               <a href={gitlink}>github</a>
             </button>
           </div>
