@@ -11,7 +11,6 @@ const Home = () => {
   const [currentPage, setCurrentPage] = useState('')
 
   const renderPage = () => {
-    console.log('butts')
     if (currentPage === 'Work') {
       console.log(currentPage)
       return <Work />
@@ -19,16 +18,16 @@ const Home = () => {
     if (currentPage === 'Contact') {
       return <Contact />
     }
-    if (currentPage === 'Resume') {
-      return <Resume />
+    if (currentPage === 'About') {
+      return <About />
     }
-    return <About />
+    return <Resume />
   }
 
   const handlePageChange = (page) => setCurrentPage(page)
 
   return (
-    <div className='flex flex-col h-screen justify-between'>
+    <div className='flex flex-col h-screen justify-between font-mono'>
       <div>
         <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
         {renderPage()}
