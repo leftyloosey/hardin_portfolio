@@ -5,7 +5,7 @@ const Nav = ({ currentPage, handlePageChange }) => {
   return (
     <div>
       <section className='bg-white z-50 fixed top-0 left-0 right-0 flex flex-row h-40 justify-between shadow-sm lg:justify-around '>
-        <img alt='me2.jpg' src={me2} className='dark: invert'></img>
+        <img alt='me2.jpg' src={me2}></img>
         <div className='flex flex-row items-end space-x-3 px-3'>
           <div className='group '>
             <a href='#About' onClick={() => handlePageChange('About')}>
