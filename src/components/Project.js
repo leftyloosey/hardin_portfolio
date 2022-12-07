@@ -21,7 +21,7 @@ const Project = ({ project }) => {
             <p className='text-sm font-light text-gray-400'>{desc}</p>
           </div>
 
-          <div className='flex flex-row justify-center md:space-y-0 md:space-x-4 md:flex-row'>
+          <div className='flex flex-row justify-center md:space-y-0 md:space-x-4 md:flex-row md:justify-start'>
             <button className='flex py-3 px-5 space-x-3 border-2 border-gray-300 rounded-lg shadow-sm hover:bg-opacity-30 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-150'>
               <a href={deploy}>deployment</a>
             </button>
