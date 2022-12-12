@@ -12,7 +12,7 @@ const Work = () => {
       gitlink: 'https://github.com/leftyloosey/bertrand_russel_oliphaunt-6',
       deploy: 'https://leftyloosey.github.io/bertrand_russel_oliphaunt-6/',
       img: weather,
-      desc: 'see a realtime forecast for any city',
+      desc: 'DOM and Fetch API. A little weather dashboard that gives a 5-day forecast for any city.',
     },
   ]
 
