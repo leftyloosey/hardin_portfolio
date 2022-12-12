@@ -3,7 +3,7 @@ import social from '../images/social_screen.png'
 import weather from '../images/weather_screen.png'
 import woman from '../images/woman.jpeg'
 import set from '../images/set_screen.png'
-import barber from '../images/barber.png'
+import barber from '../images/jesus_screen.jpeg'
 
 const Work = () => {
   const project1 = [
