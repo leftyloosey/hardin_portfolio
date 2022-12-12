@@ -1,11 +1,11 @@
-import picture from '../images/ruin.jpeg'
+// import picture from '../images/ruin.jpeg'
 
 const Project = ({ project }) => {
   const { name, gitlink, deploy, img, desc } = project[0]
 
   return (
     <div className='flex flex-col p-6 m-3 space-y-6 bg-white rounded-2xl shadow-2xl md:flex-row md:space-y-0 md:space-x-10 md:m-0 md:p-16'>
-      <div>
+      <div className=''>
         <img
           // src={picture}
           src={img}
