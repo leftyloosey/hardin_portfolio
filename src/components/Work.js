@@ -22,7 +22,7 @@ const Work = () => {
       gitlink: 'https://github.com/leftyloosey/88blendz',
       deploy: 'https://eighty8blendz.herokuapp.com/',
       img: barber,
-      desc: "I'm developing a network of barber sites.",
+      desc: "I wrote and host my barber's site, a React single-page app.",
     },
   ]
   const project4 = [
@@ -31,7 +31,7 @@ const Work = () => {
       gitlink: 'https://github.com/leftyloosey/cirith-stuart-techblog',
       deploy: 'https://cirith-blog.herokuapp.com/',
       img: social,
-      desc: 'a social network for tech posts',
+      desc: "MVC performed with mySQL/Sequelize rather than Mongo. A little blog where people can post and comment. It's called A Tech Blog but you could say anything, really. Node/express",
     },
   ]
   // const project5 = [
@@ -48,7 +48,7 @@ const Work = () => {
       gitlink: 'https://github.com/tanyamilburn/birthday-cake',
       deploy: 'https://tanyamilburn.github.io/birthday-cake/index.html',
       img: woman,
-      desc: 'choose a song by the weather',
+      desc: 'A cute little algorithm that queries a couple different APIs to randomly provide a song based on the weather and your mood',
     },
   ]
   const project7 = [
@@ -57,7 +57,7 @@ const Work = () => {
       gitlink: 'https://github.com/leftyloosey/hopeful_muddy',
       deploy: 'https://hopeful-muddy.herokuapp.com/',
       img: set,
-      desc: 'organise your songs into set lists',
+      desc: "MERN, graphQL. This is a simple musician's app for organizing songs into set lists.",
     },
   ]
   return (
