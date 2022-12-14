@@ -21,7 +21,10 @@ const Home = () => {
     if (currentPage === 'About') {
       return <About />
     }
-    return <Resume />
+    if (currentPage === 'Resume') {
+      return <Resume />
+    }
+    return <About />
   }
 
   const handlePageChange = (page) => setCurrentPage(page)
