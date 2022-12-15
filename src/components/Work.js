@@ -27,11 +27,11 @@ const Work = () => {
   ]
   const project4 = [
     {
-      name: 'Tech Blog App',
+      name: 'miniBBS',
       gitlink: 'https://github.com/leftyloosey/cirith-stuart-techblog',
       deploy: 'https://cirith-blog.herokuapp.com/',
       img: social,
-      desc: "MVC performed with mySQL/Sequelize rather than Mongo. A little blog where people can post and comment. It's called A Tech Blog but you could say anything, really. Node/express",
+      desc: 'MVC performed with mySQL/Sequelize rather than Mongo. Node/express. Handlebars! This is a little blog where people can post and comment. You could say anything, really.',
     },
   ]
   // const project5 = [
@@ -57,7 +57,7 @@ const Work = () => {
       gitlink: 'https://github.com/leftyloosey/hopeful_muddy',
       deploy: 'https://hopeful-muddy.herokuapp.com/',
       img: set,
-      desc: "MERN, graphQL. This is a simple musician's app for organizing songs into set lists.",
+      desc: "MERN, graphQL, CSS. This is a simple musician's app for organizing songs into set lists.",
     },
   ]
   return (
