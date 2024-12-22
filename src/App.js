@@ -1,9 +1,9 @@
 // import './App.css'
 import Home from './components/Home'
-// import Nav from './components/Nav'
+
 function App() {
   return (
-    <div className='App'>
+    <div className='bg-black text-green-900'>
       <Home />
     </div>
   )

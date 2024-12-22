@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  background-color: black;
+}
+
 @keyframes flicker {
   0% {
     opacity: 0.27861;
@@ -183,9 +187,79 @@
       rgba(0, 0, 255, 0.06)
     );
   z-index: 2;
+  /* background-size: cover; */
   background-size: 100% 2px, 3px 100%;
+  min-height: 100vh;
   pointer-events: none;
 }
 .crt {
   animation: textShadow 1.6s infinite;
+}
+@keyframes glitch {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-5px, 5px);
+  }
+  40% {
+    transform: translate(-5px, -5px);
+  }
+  60% {
+    transform: translate(5px, 5px);
+  }
+  80% {
+    transform: translate(5px, -5px);
+  }
+  to {
+    transform: translate(0);
+  }
+}
+.glitch {
+  /* font-size: 130px; */
+  line-height: 1;
+  /* font-family: 'Poppins', sans-serif; */
+  font-weight: 700;
+  /* color: rgb(34 197 94 / var(--tw-text-opacity, 1)); */
+  position: absolute;
+  /* top: 50%;
+  left: 50%; */
+  transform: translate(-50%, -50%);
+  margin: 0;
+  text-decoration: none;
+  /* color: #fff; */
+  &:before,
+  &:after {
+    display: block;
+    content: 'about';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.8;
+  }
+  &:after {
+    color: #4bed39;
+    /* color: #f0f; */
+    z-index: -2;
+  }
+  &:before {
+    color: #20b80f;
+    /* color: #0ff; */
+    z-index: -1;
+  }
+  &:hover {
+    &:before {
+      animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+    }
+    &:after {
+      animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both
+        infinite;
+    }
+  }
+  /* animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite; */
+}
+.glatch {
+  animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
 }
