@@ -19,7 +19,7 @@ const Nav = ({
         <div className='flex flex-row items-end space-x-2 crt'>
           <div
             className={`duration-500 hover:text-green-300 ${
-              isOpen ? 'ml-32 pr-8' : ''
+              isOpen ? 'ml-36 pr-3' : ''
             }`}
           >
             <a
