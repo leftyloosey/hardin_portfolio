@@ -10,30 +10,30 @@ import barber from '../images/jesus_screen.jpeg'
 const Work = ({ isOpen2 }) => {
   const project1 = [
     {
-      name: 'Weather Dashboard App',
+      name: 'Beef Rinsed In Oil',
       gitlink: 'https://github.com/leftyloosey/bertrand_russel_oliphaunt-6',
       deploy: 'https://leftyloosey.github.io/bertrand_russel_oliphaunt-6/',
       img: green_press,
-      desc: 'DOM and Fetch API. A little weather dashboard that gives a 5-day forecast for any city.',
+      desc: 'our stock of horsemeat rinsed in oil, on a timeline of regret',
     },
   ]
 
   const project2 = [
     {
-      name: '88Blendz Barber Studio',
+      name: 'Does Anybody Remember Laughter',
       gitlink: 'https://github.com/leftyloosey/88blendz',
       deploy: 'https://eighty8blendz.herokuapp.com/',
       img: green_ruin,
-      desc: "I wrote and host my barber's site, a React single-page app.",
+      desc: 'three cheers for uncle sam four cheers for uncle sam five cheers for uncle sam six cheers for uncle sam',
     },
   ]
   const project4 = [
     {
-      name: 'miniBBS',
+      name: 'Nine Pound Hammer',
       gitlink: 'https://github.com/leftyloosey/cirith-stuart-techblog',
       deploy: 'https://cirith-blog.herokuapp.com/',
-      img: social,
-      desc: 'MVC performed with mySQL/Sequelize rather than Mongo. Node/express. Handlebars! This is a little blog where people can post and comment. You could say anything, really.',
+      img: green_ruin,
+      desc: 'will you get in here and listen to these bawdy limericks with me',
     },
   ]
   // const project5 = [
@@ -66,9 +66,9 @@ const Work = ({ isOpen2 }) => {
     <>
       <div className={`mt-20 ${!isOpen2 ? 'invisible' : ''}`}>
         <Project project={project1} />
+        <Project project={project4} />
         <Project project={project2} />
         <Project project={project1} />
-        <Project project={project2} />
         {/* <Project project={project4} />
         <Project project={project6} />
         <Project project={project1} /> */}

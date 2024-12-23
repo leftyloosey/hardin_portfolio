@@ -18,8 +18,8 @@ const Project = ({ project }) => {
         <div className=''>
           <div className=''>
             <div>
-              <h1>{name}</h1>
-              <p className=''>{desc}</p>
+              <h1 className='pl-1 mb-1'>{name}</h1>
+              <p className='pl-1'>{desc}</p>
             </div>
           </div>
           <div className=''></div>
