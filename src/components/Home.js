@@ -32,19 +32,21 @@ const Home = () => {
 
   const handlePageChange = (page) => setCurrentPage(page)
 
-  return (
-    <div className='flex flex-col justify-between font-mono min-h-screen'>
-      <div className='flex flex-row'>
-        <div className='flex flex-col border-r-2 border-green-600 duration-500 min-h-screen'>
-          {/* <div className='invisible'>.</div> */}
-          <img alt='me2.jpg' src={me2} className='h-64 w-auto rounded-sm'></img>
-        </div>
+  const [isOpen, setIsOpen] = useState(false)
 
+  const handleClick = () => {
+    setIsOpen(!isOpen)
+  }
+
+  return (
+    <div className='flex flex-col justify-between font-mono'>
+      <div className='flex flex-row'>
+        <div className='flex flex-col border-r-2 border-green-600'></div>
         <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
         <div className=''>{renderPage()}</div>
         {/* <div className='crt'>.</div> */}
       </div>
-      <div className='crt'>.</div>
+      <div className=''>.</div>
       {/* <Footer /> */}
     </div>
   )

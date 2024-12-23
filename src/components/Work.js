@@ -7,7 +7,7 @@ import woman from '../images/woman.jpeg'
 import set from '../images/set_screen.png'
 import barber from '../images/jesus_screen.jpeg'
 
-const Work = () => {
+const Work = ({ isOpen2 }) => {
   const project1 = [
     {
       name: 'Weather Dashboard App',
@@ -64,7 +64,7 @@ const Work = () => {
   // ]
   return (
     <>
-      <div className='mt-32'>
+      <div className={`mt-20 ${!isOpen2 ? 'invisible' : ''}`}>
         <Project project={project1} />
         <Project project={project2} />
         <Project project={project1} />

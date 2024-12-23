@@ -1,14 +1,24 @@
 import React from 'react'
 
-const Contact = () => {
+const Contact = ({ isOpen, isOpen2, isOpen3, setIsOpen3 }) => {
+  // if (isOpen && isOpen2) setIsOpen3(false)
+
   return (
-    <div className='mt-56'>
-      <div className='mx-4 px-5 mt-5 duration-500 hover:text-green-500'>
-        <a href={'mailto:thisgoestodavid@gmail.com'}>
+    <>
+      {isOpen3 ? (
+        <div className={`flex flex-row mt-20 ${!isOpen3 ? 'invisible' : ''}`}>
+          <div className='hover:text-green-300'>
+            {/* <a href={'mailto:thisgoestodavid@gmail.com'}>
           thisgoestodavid@gmail.com
-        </a>
-      </div>
-    </div>
+        </a> */}
+            <div>e-mail</div>
+            <div>resume</div>
+          </div>
+        </div>
+      ) : (
+        <></>
+      )}
+    </>
   )
 }
 
