@@ -64,7 +64,9 @@ const Work = ({ isOpen2 }) => {
   // ]
   return (
     <>
-      <div className={`mt-20 ${!isOpen2 ? 'invisible' : ''}`}>
+      <div
+        className={`h-4/5 overflow-scroll mt-20 ${!isOpen2 ? 'invisible' : ''}`}
+      >
         <Project project={project1} />
         <Project project={project4} />
         <Project project={project2} />

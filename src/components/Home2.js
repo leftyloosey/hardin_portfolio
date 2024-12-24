@@ -75,7 +75,7 @@ const Home2 = () => {
         handleClick2={handleClick2}
         handleClick3={handleClick3}
       />
-      <div className='flex flex-row'>
+      <div className='flex flex-row h-screen'>
         <div
           onClick={() => handleClick()}
           className={`duration-500 border-r-2 border-green-500 ${

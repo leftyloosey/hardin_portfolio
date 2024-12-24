@@ -35,7 +35,9 @@ const Nav = ({
           <div
             className={`duration-500 hover:text-green-300 ${
               isOpen2 ? 'ml-32 pr-28' : ''
-            } 
+            }
+            ${!isOpen && isOpen2 ? 'ml-32 pr-36' : ''}
+             
             `}
           >
             <a
@@ -50,8 +52,8 @@ const Nav = ({
 
           <div
             className={`duration-500 hover:text-green-300 ${
-              isOpen3 ? 'ml-32' : ''
-            } `}
+              isOpen3 && isOpen2 ? 'ml-32 pl-1' : 'ml-36'
+            }  `}
           >
             <a
               href='#Contact'
