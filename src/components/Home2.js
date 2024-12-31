@@ -48,84 +48,93 @@ const Home2 = () => {
     }, 700)
   }
   return (
-    <div className='flex flex-col'>
-      <Nav
-        isOpen={isOpen}
-        isOpen2={isOpen2}
-        isOpen3={isOpen3}
-        handleClick={handleClick}
-        handleClick2={handleClick2}
-        handleClick3={handleClick3}
-        toggle={toggle}
-        toggle2={toggle2}
-        toggle3={toggle3}
-      />
+    <div className=''>
+      <div className='flex flex-col h-screen pb-44'>
+        <Nav
+          isOpen={isOpen}
+          isOpen2={isOpen2}
+          isOpen3={isOpen3}
+          handleClick={handleClick}
+          handleClick2={handleClick2}
+          handleClick3={handleClick3}
+          toggle={toggle}
+          toggle2={toggle2}
+          toggle3={toggle3}
+        />
 
-      <div
-        className={`duration-500 flex flex-row ${
-          toggle3 ? 'h-16' : 'h-screen'
-        }`}
-      >
         <div
-          onClick={() => handleClick()}
-          className={`duration-500 border-r-2 border-green-500 ${
-            isOpen ? 'w-48' : 'w-12'
+          className={`duration-500 flex flex-row ${
+            toggle3 ? 'h-16' : 'h-full'
           }`}
         >
-          <About
-            isOpen={isOpen}
-            isOpen2={isOpen2}
-            isOpen3={isOpen3}
-            setIsOpen={setIsOpen}
-            toggle={toggle}
-          />
+          <div
+            onClick={() => handleClick()}
+            className={`duration-500 border-r-2 border-green-500 ${
+              isOpen ? 'w-48' : 'w-12'
+            }`}
+          >
+            <About
+              isOpen={isOpen}
+              isOpen2={isOpen2}
+              isOpen3={isOpen3}
+              setIsOpen={setIsOpen}
+              toggle={toggle}
+            />
+          </div>
+          <div
+            onClick={() => handleClick2()}
+            className={`duration-500 border-r-2 border-green-500 ${
+              isOpen2 ? 'w-48' : 'w-12'
+            }`}
+          >
+            <Work isOpen2={isOpen2} toggle={toggle} />
+          </div>
+          <div
+            onClick={() => handleClick3()}
+            className={`duration-500 border-r-2 border-green-500 overflow-hidden ${
+              isOpen3 ? 'w-48' : 'w-12'
+            }`}
+          >
+            <Contact
+              isOpen={isOpen}
+              isOpen2={isOpen2}
+              isOpen3={isOpen3}
+              setIsOpen3={setIsOpen3}
+              toggle={toggle}
+            />
+          </div>
         </div>
         <div
-          onClick={() => handleClick2()}
-          className={`duration-500 border-r-2 border-green-500 ${
-            isOpen2 ? 'w-48' : 'w-12'
-          }`}
-        >
-          <Work isOpen2={isOpen2} toggle={toggle} />
-        </div>
-        <div
-          onClick={() => handleClick3()}
-          className={`duration-500 border-r-2 border-green-500 ${
-            isOpen3 ? 'w-48' : 'w-12'
-          }`}
-        >
-          <Contact
-            isOpen={isOpen}
-            isOpen2={isOpen2}
-            isOpen3={isOpen3}
-            setIsOpen3={setIsOpen3}
-            toggle={toggle}
-          />
-        </div>
-      </div>
-      <div
-        className={`duration-500 w-auto border-b-2 border-green-500 ${
-          toggle3 ? 'invisible' : ''
-        }
+          className={`duration-500 w-auto border-b-2 border-green-500 ${
+            toggle3 ? 'invisible' : ''
+          }
           `}
-      ></div>
-      <div className='flex justify-center'>
-        <button onClick={translate} className=' text-green-500'>
-          <div className=''>
-            <div
-              className={` transform duration-700 text-2xl ${
-                toggle ? '' : '-translate-x-48'
-              }
+        ></div>
+        <div className='flex justify-center'>
+          <button onClick={translate} className=' text-green-500'>
+            <div className=''>
+              <div
+                className={` transform duration-700 text-2xl ${
+                  toggle ? '' : '-translate-x-48'
+                }
             ${toggle2 ? '' : 'rotate-180'} 
             `}
-            >
-              {down}
+              >
+                {down}
+                <p
+                  className={`text-2xl ${toggle && toggle2 ? '' : 'hidden'}
+            
+            `}
+                >
+                  []
+                </p>
+              </div>
             </div>
-          </div>
-        </button>
+          </button>
+        </div>
+        {/* <Footer /> */}
       </div>
-      <div className='text-black mb-8'>.</div>
-      {/* <Footer /> */}
+      <div className='text-black'>.</div>
     </div>
   )
 }
