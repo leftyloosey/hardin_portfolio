@@ -135,7 +135,7 @@ const Home2 = () => {
           className={`duration-500 w-auto border-b-2 border-green-500 ${
             toggle ? '-translate-y-64' : ''
           }
-          ${toggle ? '' : ''}
+          ${toggle ? 'invisible' : ''}
           `}
         ></div>
         <button onClick={translate} className='text-green-500'>
@@ -145,9 +145,11 @@ const Home2 = () => {
             <p className='text-2xl'>{down}</p>
           )} */}
           <div
-            className={`ml-36 transform duration-700 text-2xl ${
-              toggle ? '' : '-translate-x-36 rotate-180'
-            } `}
+            className={`ml-64 transform duration-700 text-2xl ${
+              toggle ? '' : '-translate-x-64'
+            }
+            ${toggle2 ? '' : 'rotate-180'} 
+            `}
           >
             {down}
           </div>
