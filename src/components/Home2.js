@@ -70,7 +70,7 @@ const Home2 = () => {
         >
           <div
             onClick={() => handleClick()}
-            className={`duration-500 border-r-2 border-green-500 ${
+            className={`overflow-scroll duration-500 border-r-2 border-green-500 ${
               isOpen ? 'w-48' : 'w-12'
             }`}
           >
