@@ -72,6 +72,11 @@ const Home2 = () => {
 
   const translate = () => {
     setToggle(!toggle)
+    if (!toggle) {
+      setIsOpen(false)
+      setIsOpen2(false)
+      setIsOpen3(false)
+    }
 
     setTimeout(() => {
       setToggle2(!toggle2)

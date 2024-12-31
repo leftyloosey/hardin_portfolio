@@ -1,7 +1,7 @@
 // import { useState, useEffect } from 'react'
 import me2 from '../images/green_bulb_david2.jpg'
 
-const About = ({ isOpen, isOpen2, isOpen3, setIsOpen, toggle }) => {
+const About = ({ isOpen, isOpen2, isOpen3, setIsOpen }) => {
   // const check3 = () => {
   //   if (isOpen2 && isOpen3) setIsOpen(true)
   //   console.log('click')
@@ -9,7 +9,7 @@ const About = ({ isOpen, isOpen2, isOpen3, setIsOpen, toggle }) => {
 
   return (
     <div>
-      {isOpen && !toggle ? (
+      {isOpen ? (
         <div className='flex mt-40 bg-black text-green-500'>
           <div className={`h-auto w-48 rounded-sm`}>
             My Name is David Hardin.<br></br>

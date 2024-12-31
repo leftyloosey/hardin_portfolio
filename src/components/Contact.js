@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Contact = ({ isOpen, isOpen2, isOpen3, setIsOpen3, toggle }) => {
+const Contact = ({ isOpen, isOpen2, isOpen3, setIsOpen3 }) => {
   // if (isOpen && isOpen2) setIsOpen3(false)
 
   return (
     <>
-      {isOpen3 && !toggle ? (
+      {isOpen3 ? (
         <div className={`flex flex-row mt-20 ${!isOpen3 ? 'invisible' : ''}`}>
           <div className='ml-1 hover:text-green-300'>
             {/* <a href={'mailto:thisgoestodavid@gmail.com'}>
