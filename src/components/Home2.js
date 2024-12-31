@@ -1,8 +1,9 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, lazy, Suspense } from 'react'
 
 import Nav from './Nav'
 // import Footer from './Footer'
 import Work from './Work'
+
 import Contact from './Contact'
 import About from './About'
 
@@ -83,7 +84,7 @@ const Home2 = () => {
           </div>
           <div
             onClick={() => handleClick2()}
-            className={`duration-500 border-r-2 border-green-500 ${
+            className={`overflow-scroll duration-500 border-r-2 border-green-500 ${
               isOpen2 ? 'w-48' : 'w-12'
             }`}
           >

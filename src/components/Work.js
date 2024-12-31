@@ -1,4 +1,6 @@
-import Project from './Project'
+import { lazy, Suspense } from 'react'
+
+// import Project from './Project'
 // import social from '../images/social_screen.png'
 import green_ruin from '../images/green_ruin.jpg'
 import green_press from '../images/green_press.jpg'
@@ -6,6 +8,7 @@ import green_press from '../images/green_press.jpg'
 // import woman from '../images/woman.jpeg'
 // import set from '../images/set_screen.png'
 // import barber from '../images/jesus_screen.jpeg'
+const Project = lazy(() => import('./Project'))
 
 const Work = ({ isOpen2 }) => {
   const project1 = [
@@ -65,14 +68,26 @@ const Work = ({ isOpen2 }) => {
   return (
     <>
       <div
-        className={`h-4/5 overflow-scroll mt-20 ${!isOpen2 ? 'invisible' : ''}
+        className={`h-4/5 overflow-scroll mt-20 ${!isOpen2 ? 'hidden' : ''}
                     
         `}
       >
-        <Project project={project1} />
+        <Suspense fallback={<div>Loading...</div>}>
+          <Project project={project1} />
+        </Suspense>
+        <Suspense fallback={<div>Loading...</div>}>
+          <Project project={project4} />
+        </Suspense>
+        <Suspense fallback={<div>Loading...</div>}>
+          <Project project={project2} />
+        </Suspense>
+        <Suspense fallback={<div>Loading...</div>}>
+          <Project project={project1} />
+        </Suspense>
+        {/* <Project project={project1} />
         <Project project={project4} />
         <Project project={project2} />
-        <Project project={project1} />
+        <Project project={project1} /> */}
         {/* <Project project={project4} />
         <Project project={project6} />
         <Project project={project1} /> */}
