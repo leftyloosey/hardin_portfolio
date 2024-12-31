@@ -30,9 +30,15 @@ const Home2 = () => {
 
   // const handlePageChange = (page) => setCurrentPage(page)
 
+  // let up = String.fromCodePoint(8593)
+  let down = String.fromCodePoint(8595)
+
   const [isOpen, setIsOpen] = useState(false)
   const [isOpen2, setIsOpen2] = useState(false)
   const [isOpen3, setIsOpen3] = useState(false)
+  const [toggle, setToggle] = useState(true)
+  const [toggle2, setToggle2] = useState(true)
+  // const [toggle3, setToggle3] = useState(false)
 
   // const [recent, setRecent] = useState()
 
@@ -65,6 +71,13 @@ const Home2 = () => {
     if (isOpen3 && isOpen2) setIsOpen(false)
   }, [isOpen2, isOpen3])
 
+  const translate = () => {
+    setToggle(!toggle)
+    setTimeout(() => {
+      setToggle2(!toggle2)
+    }, 700)
+    // setToggle3(!toggle3)
+  }
   return (
     <div className='flex flex-col'>
       <Nav
@@ -74,8 +87,13 @@ const Home2 = () => {
         handleClick={handleClick}
         handleClick2={handleClick2}
         handleClick3={handleClick3}
+        toggle={toggle2}
       />
-      <div className='flex flex-row h-screen'>
+
+      <div
+        className={`duration-500 flex flex-row ${toggle ? 'h-16' : 'h-full'}`}
+      >
+        {/* <div className='flex flex-row h-96'> */}
         <div
           onClick={() => handleClick()}
           className={`duration-500 border-r-2 border-green-500 ${
@@ -111,6 +129,30 @@ const Home2 = () => {
           />
         </div>
       </div>
+      <div className=''>
+        <div
+          className={`duration-500 w-auto border-b-2 border-green-500 ${
+            toggle ? '-translate-y-64' : ''
+          }
+          ${toggle ? '' : ''}
+          `}
+        ></div>
+        <button onClick={translate} className='text-green-500'>
+          {/* {toggle3 ? (
+            <p className='text-2xl'>{up}</p>
+          ) : (
+            <p className='text-2xl'>{down}</p>
+          )} */}
+          <div
+            className={`transform duration-700 ml-2 text-2xl ${
+              toggle ? '' : 'rotate-180'
+            } `}
+          >
+            {down}
+          </div>
+        </button>
+      </div>
+
       {/* <Footer /> */}
     </div>
   )
