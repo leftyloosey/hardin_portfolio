@@ -144,32 +144,34 @@ const Home2 = () => {
           />
         </div>
       </div>
-      <div className='flex justify-center'>
-        <div
-          className={`duration-500 w-auto border-b-2 border-green-500 ${
-            toggle3 ? '-translate-y-64' : ''
-          }
-          ${toggle ? 'invisible' : ''}
+      <div
+        className={`duration-500 w-auto border-b-2 border-green-500 ${
+          toggle3 ? 'invisible' : ''
+        }
+
           `}
-        ></div>
+      ></div>
+      <div className='flex justify-center'>
         <button onClick={translate} className=' text-green-500'>
           {/* {toggle3 ? (
             <p className='text-2xl'>{up}</p>
           ) : (
             <p className='text-2xl'>{down}</p>
           )} */}
-          <div
-            className={`transform duration-700 text-2xl ${
-              toggle ? '' : '-translate-x-60'
-            }
+          <div className=''>
+            <div
+              className={` transform duration-700 text-2xl ${
+                toggle ? '' : '-translate-x-48'
+              }
             ${toggle2 ? '' : 'rotate-180'} 
             `}
-          >
-            {down}
+            >
+              {down}
+            </div>
           </div>
         </button>
       </div>
-
+      <div className='text-black mt-16'>.</div>
       {/* <Footer /> */}
     </div>
   )
