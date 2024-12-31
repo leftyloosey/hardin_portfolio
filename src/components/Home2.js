@@ -144,7 +144,7 @@ const Home2 = () => {
           />
         </div>
       </div>
-      <div className=''>
+      <div className='flex justify-center'>
         <div
           className={`duration-500 w-auto border-b-2 border-green-500 ${
             toggle3 ? '-translate-y-64' : ''
@@ -152,15 +152,15 @@ const Home2 = () => {
           ${toggle ? 'invisible' : ''}
           `}
         ></div>
-        <button onClick={translate} className='text-green-500'>
+        <button onClick={translate} className=' text-green-500'>
           {/* {toggle3 ? (
             <p className='text-2xl'>{up}</p>
           ) : (
             <p className='text-2xl'>{down}</p>
           )} */}
           <div
-            className={`ml-64 transform duration-700 text-2xl ${
-              toggle ? '' : '-translate-x-64'
+            className={`transform duration-700 text-2xl ${
+              toggle ? '' : '-translate-x-60'
             }
             ${toggle2 ? '' : 'rotate-180'} 
             `}
