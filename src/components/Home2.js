@@ -38,7 +38,7 @@ const Home2 = () => {
   const [isOpen3, setIsOpen3] = useState(false)
   const [toggle, setToggle] = useState(true)
   const [toggle2, setToggle2] = useState(true)
-  // const [toggle3, setToggle3] = useState(false)
+  const [toggle3, setToggle3] = useState(true)
 
   // const [recent, setRecent] = useState()
 
@@ -72,9 +72,14 @@ const Home2 = () => {
 
   const translate = () => {
     setToggle(!toggle)
+
     setTimeout(() => {
       setToggle2(!toggle2)
     }, 700)
+    setTimeout(() => {
+      setToggle3(!toggle3)
+    }, 700)
+
     // setToggle3(!toggle3)
   }
   return (
@@ -88,10 +93,13 @@ const Home2 = () => {
         handleClick3={handleClick3}
         toggle={toggle}
         toggle2={toggle2}
+        toggle3={toggle3}
       />
 
       <div
-        className={`duration-500 flex flex-row ${toggle ? 'h-16' : 'h-screen'}`}
+        className={`duration-500 flex flex-row ${
+          toggle3 ? 'h-16' : 'h-screen'
+        }`}
       >
         {/* <div className='flex flex-row h-96'> */}
         <div
@@ -134,7 +142,7 @@ const Home2 = () => {
       <div className=''>
         <div
           className={`duration-500 w-auto border-b-2 border-green-500 ${
-            toggle ? '-translate-y-64' : ''
+            toggle3 ? '-translate-y-64' : ''
           }
           ${toggle ? 'invisible' : ''}
           `}
