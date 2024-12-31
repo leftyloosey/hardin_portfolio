@@ -6,7 +6,7 @@ const Contact = ({ isOpen, isOpen2, isOpen3, setIsOpen3 }) => {
   return (
     <>
       {isOpen3 ? (
-        <div className={`flex flex-row mt-20 ${!isOpen3 ? 'invisible' : ''}`}>
+        <div className={`flex flex-row mt-24 ${!isOpen3 ? 'invisible' : ''}`}>
           <div className='ml-1 hover:text-green-300'>
             {/* <a href={'mailto:thisgoestodavid@gmail.com'}>
           thisgoestodavid@gmail.com
