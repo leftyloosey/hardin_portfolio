@@ -67,7 +67,6 @@ const Home2 = () => {
     console.log('3:3', isOpen3)
   }
   useEffect(() => {
-    console.log('rerender')
     if (isOpen3 && isOpen2) setIsOpen(false)
   }, [isOpen2, isOpen3])
 
@@ -106,6 +105,7 @@ const Home2 = () => {
             isOpen2={isOpen2}
             isOpen3={isOpen3}
             setIsOpen={setIsOpen}
+            toggle={toggle}
           />
         </div>
         <div
@@ -114,7 +114,7 @@ const Home2 = () => {
             isOpen2 ? 'w-48' : 'w-12'
           }`}
         >
-          <Work isOpen2={isOpen2} />
+          <Work isOpen2={isOpen2} toggle={toggle} />
         </div>
         <div
           onClick={() => handleClick3()}
@@ -127,6 +127,7 @@ const Home2 = () => {
             isOpen2={isOpen2}
             isOpen3={isOpen3}
             setIsOpen3={setIsOpen3}
+            toggle={toggle}
           />
         </div>
       </div>

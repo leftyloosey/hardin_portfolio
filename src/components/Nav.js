@@ -30,7 +30,8 @@ const Nav = ({
           <div
             className={`duration-500 hover:text-green-300 ${
               isOpen ? 'ml-36 pr-3' : ''
-            }`}
+            }
+            `}
           >
             <a
               href='#About'

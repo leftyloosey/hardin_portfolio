@@ -7,7 +7,7 @@ import green_press from '../images/green_press.jpg'
 // import set from '../images/set_screen.png'
 // import barber from '../images/jesus_screen.jpeg'
 
-const Work = ({ isOpen2 }) => {
+const Work = ({ isOpen2, toggle }) => {
   const project1 = [
     {
       name: 'Beef Rinsed In Oil',
@@ -65,7 +65,11 @@ const Work = ({ isOpen2 }) => {
   return (
     <>
       <div
-        className={`h-4/5 overflow-scroll mt-20 ${!isOpen2 ? 'invisible' : ''}`}
+        className={`h-4/5 overflow-scroll mt-20 ${
+          !isOpen2 || toggle ? 'invisible' : ''
+        }
+                    
+        `}
       >
         <Project project={project1} />
         <Project project={project4} />
