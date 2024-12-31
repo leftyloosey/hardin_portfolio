@@ -8,6 +8,7 @@ const Nav = ({
   handleClick2,
   handleClick3,
   toggle,
+  toggle2,
 }) => {
   // console.log(isOpen3)
   return (
@@ -15,12 +16,16 @@ const Nav = ({
       {/* <img alt='me2.jpg' src={me2} className=''></img> */}
 
       {/* <section className='bg-black crt text-green-500 z-50  justify-between shadow-sm lg:justify-around border-b-2 border-green-600'> */}
-      <section className='bg-black text-green-500 crt z-50 fixed top-0 flex flex-row h-16 w-screen border-b-2 border-green-600 '>
+      <section
+        className={`bg-black text-green-500 crt z-50 fixed top-0 flex flex-row h-16 w-screen ${
+          toggle ? '' : 'border-b-2 border-green-600'
+        } `}
+      >
         {/* <div className='invisible'>.</div> */}
         <div
-          className={`flex flex-row items-end space-x-2 ${
-            toggle ? 'invisible' : ''
-          } `}
+          className={`flex flex-row items-end space-x-2
+            ${toggle2 ? 'invisible' : ''}  
+          `}
         >
           <div
             className={`duration-500 hover:text-green-300 ${

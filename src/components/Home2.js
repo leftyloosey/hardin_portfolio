@@ -87,11 +87,12 @@ const Home2 = () => {
         handleClick={handleClick}
         handleClick2={handleClick2}
         handleClick3={handleClick3}
-        toggle={toggle2}
+        toggle={toggle}
+        toggle2={toggle2}
       />
 
       <div
-        className={`duration-500 flex flex-row ${toggle ? 'h-16' : 'h-full'}`}
+        className={`duration-500 flex flex-row ${toggle ? 'h-16' : 'h-screen'}`}
       >
         {/* <div className='flex flex-row h-96'> */}
         <div
@@ -144,8 +145,8 @@ const Home2 = () => {
             <p className='text-2xl'>{down}</p>
           )} */}
           <div
-            className={`transform duration-700 ml-2 text-2xl ${
-              toggle ? '' : 'rotate-180'
+            className={`ml-36 transform duration-700 text-2xl ${
+              toggle ? '' : '-translate-x-36 rotate-180'
             } `}
           >
             {down}
