@@ -68,7 +68,9 @@ const Work = ({ isOpen2 }) => {
   return (
     <>
       <div
-        className={`h-4/5 overflow-scroll mt-20 ${!isOpen2 ? 'hidden' : ''}
+        className={`flex flex-row overflow-scroll mt-20 space-x-2 ${
+          !isOpen2 ? 'hidden' : ''
+        }
                     
         `}
       >
@@ -84,10 +86,10 @@ const Work = ({ isOpen2 }) => {
         <Suspense fallback={<div>Loading...</div>}>
           <Project project={project1} />
         </Suspense>
-        {/* <Project project={project1} />
+        <Project project={project1} />
         <Project project={project4} />
         <Project project={project2} />
-        <Project project={project1} /> */}
+        <Project project={project1} />
         {/* <Project project={project4} />
         <Project project={project6} />
         <Project project={project1} /> */}
