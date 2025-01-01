@@ -74,8 +74,8 @@ const Work = ({ isOpen2 }) => {
                     
         `}
       >
-        <Suspense fallback={<div>Loading...</div>}>
-          <Project project={project1} />
+        {/* <Suspense fallback={<div>Loading...</div>}>
+          <Project className='basis-96 shrink-0 grow-0' project={project1} />
         </Suspense>
         <Suspense fallback={<div>Loading...</div>}>
           <Project project={project4} />
@@ -85,11 +85,26 @@ const Work = ({ isOpen2 }) => {
         </Suspense>
         <Suspense fallback={<div>Loading...</div>}>
           <Project project={project1} />
-        </Suspense>
-        <Project project={project1} />
-        <Project project={project4} />
-        <Project project={project2} />
-        <Project project={project1} />
+        </Suspense> */}
+        <div className='basis-48 shrink-0 grow-0'>
+          <Project project={project1} />
+        </div>
+        <div className='basis-48 shrink-0 grow-0'>
+          <Project project={project4} />
+        </div>
+        <div className='basis-48 shrink-0 grow-0'>
+          <Project project={project2} />
+        </div>
+        <div className='basis-48 shrink-0 grow-0'>
+          <Project project={project1} />
+        </div>
+        <div className='basis-48 shrink-0 grow-0'>
+          <Project project={project1} />
+        </div>
+        <div className='basis-48 shrink-0 grow-0'>
+          <Project project={project1} />
+        </div>
+
         {/* <Project project={project4} />
         <Project project={project6} />
         <Project project={project1} /> */}
