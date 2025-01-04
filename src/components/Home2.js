@@ -88,7 +88,11 @@ const Home2 = () => {
               isOpen2 ? 'w-48' : 'w-12'
             }`}
           >
-            <Work isOpen2={isOpen2} toggle={toggle} />
+            <Work
+              handleClick2={handleClick2}
+              isOpen2={isOpen2}
+              toggle={toggle}
+            />
           </div>
           <div
             onClick={() => handleClick3()}

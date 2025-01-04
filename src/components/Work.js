@@ -4,21 +4,25 @@ import { lazy } from 'react'
 // import Project from './Project'
 // import social from '../images/social_screen.png'
 import green_ruin from '../images/green_ruin.jpg'
-import green_press from '../images/green_press.jpg'
+// import green_press from '../images/green_press.jpg'
+import green_88 from '../images/green_88blendz_screen.png'
 // import weather from '../images/weather_screen.png'
 // import woman from '../images/woman.jpeg'
 // import set from '../images/set_screen.png'
 // import barber from '../images/jesus_screen.jpeg'
 const Project = lazy(() => import('./Project'))
 
-const Work = ({ isOpen2 }) => {
+const Work = ({ handleClick2, isOpen2 }) => {
   const project1 = [
     {
-      name: 'Beef Rinsed In Oil',
-      gitlink: 'https://github.com/leftyloosey/bertrand_russel_oliphaunt-6',
-      deploy: 'https://leftyloosey.github.io/bertrand_russel_oliphaunt-6/',
-      img: green_press,
-      desc: 'our stock of horsemeat rinsed in oil, on a timeline of regret',
+      name: '88Blendz Barbershop',
+      gitlink: 'https://github.com/leftyloosey/88blendz',
+      deploy: 'https://eighty8blendz.herokuapp.com/',
+      // gitlink: 'https://github.com/leftyloosey/bertrand_russel_oliphaunt-6',
+      // deploy: 'https://leftyloosey.github.io/bertrand_russel_oliphaunt-6/',
+      img: green_88,
+      desc: 'Barbershop in Salt Lake City, Utah. React/Tailwind. Welcome splash, haircut gallery, map.',
+      // desc: 'our stock of horsemeat rinsed in oil, on a timeline of regret',
     },
   ]
 
@@ -88,7 +92,7 @@ const Work = ({ isOpen2 }) => {
           <Project project={project1} />
         </Suspense> */}
         <div className='basis-48 shrink-0 grow-0'>
-          <Project project={project1} />
+          <Project handleClick2={handleClick2} project={project1} />
         </div>
         <div className='basis-48 shrink-0 grow-0'>
           <Project project={project4} />
