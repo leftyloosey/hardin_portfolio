@@ -6,7 +6,7 @@ const Project = ({ project }) => {
   // const { name, gitlink, deploy, img, desc } = project[0]
 
   return (
-    <div className='flex flex-col'>
+    <div className='flex flex-col h-full justify-between'>
       <div className=''>
         <img
           // src={picture}
@@ -15,15 +15,22 @@ const Project = ({ project }) => {
           className=''
         />
 
-        <div className=''>
+        <div className='flex flex-col'>
           <div className=''>
             <div>
               <h1 className='pl-1 mb-1'>{name}</h1>
               <p className='pl-1'>{desc}</p>
             </div>
           </div>
-          <div className=''></div>
         </div>
+      </div>
+      <div className='flex flex-col gap-y-1'>
+        <button className='hover:text-green-300 border-dotted border-2 hover:border-dashed rounded-full'>
+          github
+        </button>
+        <button className='hover:text-green-300 border-dotted border-2 hover:border-dashed rounded-full'>
+          deployment
+        </button>
       </div>
     </div>
   )

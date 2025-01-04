@@ -1,4 +1,5 @@
-import { lazy, Suspense } from 'react'
+import { lazy } from 'react'
+// import { lazy, Suspense } from 'react'
 
 // import Project from './Project'
 // import social from '../images/social_screen.png'
@@ -27,7 +28,7 @@ const Work = ({ isOpen2 }) => {
       gitlink: 'https://github.com/leftyloosey/88blendz',
       deploy: 'https://eighty8blendz.herokuapp.com/',
       img: green_ruin,
-      desc: 'three cheers for uncle sam four cheers for uncle sam five cheers for uncle sam six cheers for uncle sam',
+      desc: 'three cheers for uncle sam four cheers for uncle sam five cheers for uncle sam six cheers for uncle sam three cheers for uncle sam four cheers for uncle sam five cheers for uncle sam six cheers for uncle sam',
     },
   ]
   const project4 = [

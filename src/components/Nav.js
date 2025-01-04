@@ -29,8 +29,8 @@ const Nav = ({
           `}
         >
           <div
-            className={`duration-1000 hover:text-green-300 ${
-              isOpen ? 'ml-36 pr-3' : ''
+            className={`duration-1000 hover:text-green-300 sm:pr-1 ${
+              isOpen ? 'ml-36 pr-2' : ''
             }
             `}
           >
