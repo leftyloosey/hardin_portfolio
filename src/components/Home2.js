@@ -116,7 +116,9 @@ const Home2 = () => {
             <div className=''>
               <div
                 className={` transform duration-700 text-2xl ${
-                  toggle ? '' : '-translate-x-48'
+                  toggle
+                    ? ''
+                    : '-translate-x-48 md:-translate-x-72 lg:-translate-x-0'
                 }
             ${toggle2 ? '' : 'rotate-180'} 
             `}
