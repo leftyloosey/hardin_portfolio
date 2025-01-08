@@ -1,11 +1,9 @@
 import { lazy } from 'react'
 // import { lazy, Suspense } from 'react'
 
-import green_ruin from '../images/green_ruin.jpg'
-import green_88 from '../images/green_88blendz_screen.png'
 import green_blendz from '../images/green_blendz_home.png'
 import green_cirith from '../images/green_cirith_home.png'
-import green_malaia from '../images/green_malalai_home.png'
+import green_malaia from '../images/green_malaia_home.png'
 import green_muddy from '../images/green_muddy_home.png'
 import green_proshop from '../images/green_proshop_home.png'
 import green_weather from '../images/green_weather_home.png'
@@ -18,7 +16,7 @@ const Work = ({ handleClick2, isOpen2 }) => {
       name: '88Blendz Barbershop',
       gitlink: 'https://github.com/leftyloosey/88blendz',
       deploy: 'https://eighty8blendz.herokuapp.com/',
-      img: green_88,
+      img: green_blendz,
       desc: 'Barbershop in Salt Lake City, Utah. React/Tailwind. Welcome splash, haircut gallery, map.',
     },
   ]
@@ -65,7 +63,7 @@ const Work = ({ handleClick2, isOpen2 }) => {
       name: 'Weather Forecast App',
       gitlink: 'https://github.com/leftyloosey/khazad-aufheben',
       deploy: 'https://khazad-aufheben-6509b1bdcf3e.herokuapp.com/',
-      img: green_proshop,
+      img: green_weather,
       desc: 'Fetch, DOM manipulation. Get a weather forecast for any city.',
     },
   ]
