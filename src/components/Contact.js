@@ -12,11 +12,10 @@ const Contact = ({ isOpen, isOpen2, isOpen3, setIsOpen3 }) => {
           }`}
         >
           <div className='flex flex-col items-baseline ml-2'>
-            {/* <a href={'mailto:thisgoestodavid@gmail.com'}>
-          thisgoestodavid@gmail.com
-        </a> */}
-            <button className='hover:text-green-300'>e-mail</button>
-            <button className='hover:text-green-300'>resume</button>
+            <button className='hover:text-green-300'>
+              <a href='mailto:thisgoestodavid@gmail.com'>email</a>
+            </button>
+            {/* <button className='hover:text-green-300'>resume</button> */}
           </div>
         </div>
       ) : (

@@ -1,9 +1,6 @@
 import { useState, useEffect } from 'react'
-
 import Nav from './Nav'
-// import Footer from './Footer'
 import Work from './Work'
-
 import Contact from './Contact'
 import About from './About'
 
