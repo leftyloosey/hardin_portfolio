@@ -47,7 +47,7 @@ const Home2 = () => {
   }
   return (
     <div className=''>
-      <div className='flex flex-col h-screen pb-44'>
+      <div className='flex flex-col h-full'>
         <Nav
           isOpen={isOpen}
           isOpen2={isOpen2}

@@ -10,8 +10,8 @@ const About = ({ isOpen, isOpen2, isOpen3, setIsOpen }) => {
   return (
     <div>
       {isOpen ? (
-        <div className='flex flex-col mt-24 bg-white text-green-500 no-scrollbar'>
-          <div className={`h-0 w-48 rounded-sm`}>
+        <div className='flex flex-col mt-24 text-green-500 no-scrollbar h-full overflow-x-hidden'>
+          <div className='w-48 rounded-sm'>
             My Name is David Hardin.<br></br>
             <br></br>Full Stack React + Technical Writer<br></br>Mongo, Express,
             REST, Redux, graphQL, Node. etc etc

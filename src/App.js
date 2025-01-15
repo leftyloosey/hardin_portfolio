@@ -3,7 +3,7 @@ import Home2 from './components/Home2'
 
 function App() {
   return (
-    <div className='bg-black text-green-500 crt h-full overflow-hidden'>
+    <div className='bg-black text-green-500 crt overflow-hidden h-screen no-scrollbar'>
       <div className=''>
         <Home2 />
       </div>
