@@ -42,8 +42,8 @@ const Work = ({ handleClick2, isOpen2 }) => {
   ]
   const project4 = [
     {
-      name: 'Malaia Portfolio',
-      gitlink: '',
+      name: 'Kate Malaia Portfolio',
+      gitlink: 'https://github.com/leftyloosey/bree_uncouth',
       deploy: 'https://leftyloosey.github.io/bree_uncouth_milosz/',
       img: green_malaia,
       desc: "React, Tailwind. Professor Malaia's porftolio.",
