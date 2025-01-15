@@ -47,7 +47,7 @@ const Home2 = () => {
   }
   return (
     <div className=''>
-      <div className='flex flex-col h-full'>
+      <div className='flex flex-col h-screen'>
         <Nav
           isOpen={isOpen}
           isOpen2={isOpen2}
@@ -112,7 +112,7 @@ const Home2 = () => {
           }
           `}
         ></div>
-        <div className='flex justify-center'>
+        <div className='flex justify-center '>
           <button onClick={translate} className=' text-green-500'>
             <div className=''>
               <div
