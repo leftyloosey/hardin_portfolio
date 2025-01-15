@@ -96,7 +96,7 @@ const Home2 = () => {
           </div>
           <div
             onClick={() => handleClick3()}
-            className={`duration-500 border-r-2 border-green-500 ${
+            className={`duration-500 border-r-2 border-green-500 no-scrollbar ${
               isOpen3 ? 'w-48' : 'w-12'
             }`}
           >
