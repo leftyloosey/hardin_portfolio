@@ -12,41 +12,27 @@ const Project = ({ handleClick2, project }) => {
   }
 
   return (
-    <div className='flex flex-col h-full justify-between'>
-      <div className=''>
-        <img
-          // src={picture}
-          src={img}
-          alt=''
-          className=''
-        />
-
-        <div className='flex flex-col'>
-          <div className=''>
-            <div>
-              <h1 className='pl-1 mb-1'>{name}</h1>
-              <p className='pl-1'>{desc}</p>
-            </div>
-          </div>
-        </div>
+    <div className='flex flex-col justify-between mt-28 h-full gap-y-4'>
+      <div>
+        <img src={img} alt='' className='max-h-28' />
+        <h1 className='pl-1 mb-1 min-h-16'>{name}</h1>
+        <p className='pl-1'>{desc}</p>
       </div>
-      <div className='flex flex-col gap-y-1'>
-        <button
-          // onClick={timer}
-          className='hover:text-green-300 border-dotted border-2 hover:border-dashed rounded-full'
-        >
-          <a href={gitlink} alt='' target='_blank' rel='noopener noreferrer'>
-            github
-          </a>
-        </button>
-        <button
-          // onClick={timer}
-          className='hover:text-green-300 border-dotted border-2 hover:border-dashed rounded-full'
-        >
-          <a href={deploy} alt='' target='_blank' rel='noopener noreferrer'>
-            deployment
-          </a>
-        </button>
+      <div className='flex flex-col justify-between'>
+        <div></div>
+
+        <div className='flex flex-col gap-y-1'>
+          <button className='hover:text-green-300 border-dotted border-2 hover:border-dashed rounded-full'>
+            <a href={gitlink} alt='' target='_blank' rel='noopener noreferrer'>
+              github
+            </a>
+          </button>
+          <button className='hover:text-green-300 border-dotted border-2 hover:border-dashed rounded-full'>
+            <a href={deploy} alt='' target='_blank' rel='noopener noreferrer'>
+              deployment
+            </a>
+          </button>
+        </div>
       </div>
     </div>
   )

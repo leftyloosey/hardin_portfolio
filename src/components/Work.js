@@ -70,7 +70,7 @@ const Work = ({ handleClick2, isOpen2 }) => {
   return (
     <>
       <div
-        className={`flex flex-row overflow-scroll mt-20 space-x-2 ${
+        className={`flex flex-row overflow-scrol h-96 space-x-2 ${
           !isOpen2 ? 'hidden' : ''
         }`}
       >
