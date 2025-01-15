@@ -68,7 +68,8 @@ const Home2 = () => {
         >
           <div
             onClick={() => handleClick()}
-            className={`overflow-scroll duration-500 border-r-2 border-green-500 ${
+            className={` duration-500 border-r-2 border-green-500 ${
+              // className={`overflow-scroll duration-500 border-r-2 border-green-500 ${
               isOpen ? 'w-48' : 'w-12'
             }`}
           >
@@ -82,7 +83,8 @@ const Home2 = () => {
           </div>
           <div
             onClick={() => handleClick2()}
-            className={`overflow-scroll duration-500 border-r-2 border-green-500 ${
+            className={` duration-500 border-r-2 border-green-500 ${
+              // className={`overflow-scroll duration-500 border-r-2 border-green-500 ${
               isOpen2 ? 'w-48' : 'w-12'
             }`}
           >
