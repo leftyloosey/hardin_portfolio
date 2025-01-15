@@ -110,8 +110,8 @@ const Home2 = () => {
           </div>
         </div>
         <div
-          className={`duration-500 w-auto border-b-2 border-green-500 ${
-            // className={`duration-500 w-auto border-b-2 border-green-500 crt ${
+          // className={`duration-500 w-auto border-b-2 border-green-500 ${
+          className={`duration-500 w-auto border-b-2 border-green-500 crt ${
             toggle3 ? 'invisible' : ''
           }
           `}
