@@ -83,7 +83,7 @@ const Home2 = () => {
           </div>
           <div
             onClick={() => handleClick2()}
-            className={` duration-500 border-r-2 border-green-500 ${
+            className={`duration-500 border-r-2 border-green-500 ${
               // className={`overflow-scroll duration-500 border-r-2 border-green-500 ${
               isOpen2 ? 'w-48' : 'w-12'
             }`}
@@ -96,7 +96,7 @@ const Home2 = () => {
           </div>
           <div
             onClick={() => handleClick3()}
-            className={`duration-500 border-r-2 border-green-500 overflow-hidden ${
+            className={`duration-500 border-r-2 border-green-500 ${
               isOpen3 ? 'w-48' : 'w-12'
             }`}
           >
@@ -110,7 +110,8 @@ const Home2 = () => {
           </div>
         </div>
         <div
-          className={`duration-500 w-auto border-b-2 border-green-500 crt ${
+          className={`duration-500 w-auto border-b-2 border-green-500 ${
+            // className={`duration-500 w-auto border-b-2 border-green-500 crt ${
             toggle3 ? 'invisible' : ''
           }
           `}

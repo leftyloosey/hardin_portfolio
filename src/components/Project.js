@@ -12,7 +12,7 @@ const Project = ({ handleClick2, project }) => {
   }
 
   return (
-    <div className='flex flex-col justify-between h-96 mt-28 no-scrollbar'>
+    <div className='flex flex-col justify-between h-96 mt-28'>
       {/* <div className='flex flex-col justify-between h-96 mt-28'> */}
       <div>
         <img src={img} alt='' className='' />
