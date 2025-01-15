@@ -12,7 +12,7 @@ const Project = ({ handleClick2, project }) => {
   }
 
   return (
-    <div className='flex flex-col justify-between mt-28 h-full gap-y-4'>
+    <div className='flex flex-col justify-between mt-28 h-96 gap-y-4'>
       <div>
         <img src={img} alt='' className='max-h-28' />
         <h1 className='pl-1 mb-1 min-h-16'>{name}</h1>

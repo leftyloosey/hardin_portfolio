@@ -11,7 +11,7 @@ const About = ({ isOpen, isOpen2, isOpen3, setIsOpen }) => {
     <div>
       {isOpen ? (
         <div className='flex flex-col mt-24 bg-black text-green-500'>
-          <div className={`h-auto w-48 rounded-sm`}>
+          <div className={`h-96 w-48 rounded-sm`}>
             My Name is David Hardin.<br></br>
             <br></br>Full Stack React + Technical Writer<br></br>Mongo, Express,
             REST, Redux, graphQL, Node. etc etc
