@@ -16,7 +16,7 @@ const Project = ({ handleClick2, project }) => {
       <div>
         <img src={img} alt='' className='' />
         <h1 className='pl-1 mb-1'>{name}</h1>
-        <p className='pl-1 '>{desc}</p>
+        <p className='pl-1'>{desc}</p>
       </div>
       <div className='flex flex-col justify-betwee'>
         <div className='flex flex-col gap-y-1'>
