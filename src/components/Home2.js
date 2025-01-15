@@ -13,6 +13,7 @@ const Home2 = () => {
   const [toggle, setToggle] = useState(true)
   const [toggle2, setToggle2] = useState(true)
   const [toggle3, setToggle3] = useState(true)
+  // const [workToggle, setWorkToggle] = useState(true)
 
   const handleClick = () => {
     if (isOpen2 && isOpen3) setIsOpen3(!isOpen3)

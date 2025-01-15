@@ -14,11 +14,11 @@ const Project = ({ handleClick2, project }) => {
   return (
     <div className='flex flex-col justify-between mt-28 h-96 gap-y-4'>
       <div>
-        <img src={img} alt='' className='max-h-28' />
-        <h1 className='pl-1 mb-1 min-h-16'>{name}</h1>
+        <img src={img} alt='' className='' />
+        <h1 className='pl-1 mb-1'>{name}</h1>
         <p className='pl-1'>{desc}</p>
       </div>
-      <div className='flex flex-col justify-between'>
+      <div className='flex flex-col justify-betwee'>
         <div></div>
 
         <div className='flex flex-col gap-y-1'>
