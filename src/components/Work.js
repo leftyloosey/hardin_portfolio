@@ -70,9 +70,7 @@ const Work = ({ handleClick2, isOpen2 }) => {
   return (
     <>
       <div
-        className={`flex flex-row overflow-scrol h-96 space-x-2 ${
-          !isOpen2 ? 'hidden' : ''
-        }`}
+        className={`flex flex-row h-96 space-x-2 ${!isOpen2 ? 'hidden' : ''}`}
       >
         {/* <Suspense fallback={<div>Loading...</div>}>
           <Project className='basis-96 shrink-0 grow-0' project={project1} />
