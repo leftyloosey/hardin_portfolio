@@ -23,7 +23,7 @@ const Work = ({ handleClick2, isOpen2 }) => {
 
   const project2 = [
     {
-      name: 'Tech Blog',
+      name: 'miniBBS Tech Blog',
       gitlink: 'https://github.com/leftyloosey/cirith-stuart-techblog',
       deploy: 'https://cirith-blog.herokuapp.com/',
       img: green_cirith,
