@@ -1,15 +1,12 @@
-// import picture from '../images/ruin.jpeg'
-// hover shadow button
-
 const Project = ({ handleClick2, project }) => {
   // const { name, img, desc } = project[0]
   const { name, gitlink, deploy, img, desc } = project[0]
 
-  const timer = () => {
-    setTimeout(() => {
-      handleClick2()
-    }, 200)
-  }
+  // const timer = () => {
+  //   setTimeout(() => {
+  //     handleClick2()
+  //   }, 200)
+  // }
 
   return (
     <div className='flex flex-col justify-between h-96 mt-28'>
