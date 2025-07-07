@@ -18,7 +18,7 @@ const Work = ({ isOpen2 }) => {
       gitlink: 'https://github.com/leftyloosey/88blendz',
       deploy: 'https://88blendz.net/',
       img: green_blendz,
-      desc: 'React + Tailwind. Barbershop in Salt Lake City, Utah.',
+      desc: 'React, Tailwind. Barbershop in Salt Lake City, Utah.',
     },
   ]
 
@@ -83,7 +83,7 @@ const Work = ({ isOpen2 }) => {
       gitlink: 'https://github.com/leftyloosey/vernunft_anduril/tree/main',
       deploy: 'https://blendz-a0e7082e8ee7.herokuapp.com/',
       img: green_signup,
-      desc: "React, graphQL. 88Blendz Barbershop's dynamic haircut signup sheet and QRcode generator.",
+      desc: "Mongo, Apollo, React, graphQL. 88Blendz Barbershop's dynamic haircut signup sheet and QRcode generator.",
     },
   ]
   return (
