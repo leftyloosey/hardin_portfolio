@@ -1,5 +1,4 @@
 import github from '../images/github.png'
-import linkedin from '../images/linked.png'
 
 const style = { height: '1.5rem' }
 

@@ -11,12 +11,12 @@ import green_signup from '../images/green_blendz_signup_home.jpg'
 
 const Project = lazy(() => import('./Project'))
 
-const Work = ({ handleClick2, isOpen2 }) => {
+const Work = ({ isOpen2 }) => {
   const project1_blendz = [
     {
       name: '88Blendz Barbershop',
       gitlink: 'https://github.com/leftyloosey/88blendz',
-      deploy: 'https://eighty8blendz.herokuapp.com/',
+      deploy: 'https://88blendz.net/',
       img: green_blendz,
       desc: 'React + Tailwind. Barbershop in Salt Lake City, Utah.',
     },
@@ -74,7 +74,7 @@ const Work = ({ handleClick2, isOpen2 }) => {
       gitlink: 'https://github.com/leftyloosey/hoobasar_mathom',
       deploy: 'https://utahhousinginsecurity.org',
       img: green_housing,
-      desc: 'React, Tailwind. An research archive (photos + interviews) for the University of Utah',
+      desc: 'React, Tailwind. A research archive (photos + interviews) for the University of Utah',
     },
   ]
   const project8_signup = [
@@ -83,7 +83,7 @@ const Work = ({ handleClick2, isOpen2 }) => {
       gitlink: 'https://github.com/leftyloosey/vernunft_anduril/tree/main',
       deploy: 'https://blendz-a0e7082e8ee7.herokuapp.com/',
       img: green_signup,
-      desc: "React, graphQL. 88Blendz Barbershop's dynamic barber visit signup sheet and QRcode generator.",
+      desc: "React, graphQL. 88Blendz Barbershop's dynamic haircut signup sheet and QRcode generator.",
     },
   ]
   return (

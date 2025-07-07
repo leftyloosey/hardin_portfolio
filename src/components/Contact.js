@@ -1,8 +1,4 @@
-import React from 'react'
-
-const Contact = ({ isOpen, isOpen2, isOpen3, setIsOpen3 }) => {
-  // if (isOpen && isOpen2) setIsOpen3(false)
-
+const Contact = ({ isOpen3 }) => {
   return (
     <>
       {isOpen3 ? (
@@ -14,6 +10,9 @@ const Contact = ({ isOpen, isOpen2, isOpen3, setIsOpen3 }) => {
           <div className='flex flex-col items-baseline ml-2'>
             <button className='hover:text-green-300'>
               <a href='mailto:thisgoestodavid@gmail.com'>email</a>
+            </button>
+            <button className='hover:text-green-300'>
+              <a href='https://github.com/leftyloosey'>github</a>
             </button>
             {/* <button className='hover:text-green-300'>resume</button> */}
           </div>
