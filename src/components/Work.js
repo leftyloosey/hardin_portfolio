@@ -15,7 +15,7 @@ const Work = ({ isOpen2 }) => {
   const project1_blendz = [
     {
       name: '88Blendz Barbershop',
-      gitlink: 'https://github.com/leftyloosey/88blendz',
+      gitlink: 'https://github.com/leftyloosey/88blendz2',
       deploy: 'https://88blendz.net/',
       img: green_blendz,
       desc: 'React, Tailwind. Barbershop in Salt Lake City, Utah.',
