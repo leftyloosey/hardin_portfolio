@@ -8,7 +8,7 @@ const About = ({ isOpen }) => {
           <div className='w-48 rounded-sm'>
             My Name is David Hardin.<br></br>
             <br></br>Full Stack React + Technical Writer<br></br>Mongo, Express,
-            REST, Redux, graphQL, Node. etc etc
+            REST, Redux, graphQL, Node, Java. etc etc
             <img alt='me2.jpg' src={me2}></img>
           </div>
         </div>
