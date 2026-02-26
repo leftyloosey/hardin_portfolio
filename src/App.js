@@ -3,7 +3,8 @@ import Home2 from './components/Home2'
 
 function App() {
   return (
-    <div className='bg-black text-green-500 crt'>
+    <div className='bg-black text-green-500'>
+      {/* <div className='bg-black text-green-500 crt'> */}
       <div className=''>
         <Home2 />
       </div>

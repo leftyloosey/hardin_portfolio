@@ -99,16 +99,16 @@ const Work = ({ isOpen2 }) => {
         <div className='basis-48 shrink-0 grow-0'>
           <Project project={project1_blendz} />
         </div>
-        <div className='basis-48 shrink-0 grow-0'>
+        {/* <div className='basis-48 shrink-0 grow-0'>
           <Project project={project8_signup} />
-        </div>
+        </div> */}
         <div className='basis-48 shrink-0 grow-0'>
           <Project project={project4_malaia} />
         </div>
-        <div className='basis-48 shrink-0 grow-0'>
+        {/* <div className='basis-48 shrink-0 grow-0'>
           <Project project={project3_setlists} />
-        </div>
-        <div className='basis-48 shrink-0 grow-0'>
+        </div> */}
+        {/* <div className='basis-48 shrink-0 grow-0'>
           <Project project={project2_blog} />
         </div>
         <div className='basis-48 shrink-0 grow-0'>
@@ -116,7 +116,7 @@ const Work = ({ isOpen2 }) => {
         </div>
         <div className='basis-48 shrink-0 grow-0'>
           <Project project={project5_proshop} />
-        </div>
+        </div> */}
       </div>
     </>
   )
