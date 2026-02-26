@@ -1,13 +1,13 @@
 import { lazy } from 'react'
 
 import green_blendz from '../images/green_blendz_home.png'
-import green_cirith from '../images/green_cirith_home.png'
+// import green_cirith from '../images/green_cirith_home.png'
 import green_malaia from '../images/green_malaia_home.png'
-import green_setlists from '../images/green_setlists_home.jpg'
-import green_proshop from '../images/green_proshop_home.png'
-import green_weather from '../images/green_weather_home.png'
+// import green_setlists from '../images/green_setlists_home.jpg'
+// import green_proshop from '../images/green_proshop_home.png'
+// import green_weather from '../images/green_weather_home.png'
 import green_housing from '../images/green_housing_swoop.jpg'
-import green_signup from '../images/green_blendz_signup_home.jpg'
+// import green_signup from '../images/green_blendz_signup_home.jpg'
 
 const Project = lazy(() => import('./Project'))
 
@@ -22,25 +22,25 @@ const Work = ({ isOpen2 }) => {
     },
   ]
 
-  const project2_blog = [
-    {
-      name: 'miniBBS Blog',
-      gitlink: 'https://github.com/leftyloosey/cirith-stuart-techblog',
-      deploy: 'https://cirith-blog.herokuapp.com/',
-      img: green_cirith,
-      desc: 'Sequelize, Bootstrap, Handlebars. A blog for posting and commenting.',
-    },
-  ]
+  // const project2_blog = [
+  //   {
+  //     name: 'miniBBS Blog',
+  //     gitlink: 'https://github.com/leftyloosey/cirith-stuart-techblog',
+  //     deploy: 'https://cirith-blog.herokuapp.com/',
+  //     img: green_cirith,
+  //     desc: 'Sequelize, Bootstrap, Handlebars. A blog for posting and commenting.',
+  //   },
+  // ]
 
-  const project3_setlists = [
-    {
-      name: 'Set Lists',
-      gitlink: 'https://github.com/leftyloosey/hopeful_muddy',
-      deploy: 'https://hopeful-muddy.herokuapp.com/',
-      img: green_setlists,
-      desc: "Mongo, graphQL, React, Node. Fullstack musician's app for organizing songs into set lists.",
-    },
-  ]
+  // const project3_setlists = [
+  //   {
+  //     name: 'Set Lists',
+  //     gitlink: 'https://github.com/leftyloosey/hopeful_muddy',
+  //     deploy: 'https://hopeful-muddy.herokuapp.com/',
+  //     img: green_setlists,
+  //     desc: "Mongo, graphQL, React, Node. Fullstack musician's app for organizing songs into set lists.",
+  //   },
+  // ]
   const project4_malaia = [
     {
       name: 'Kate Malaia Portfolio',
@@ -50,24 +50,24 @@ const Work = ({ isOpen2 }) => {
       desc: "React, Tailwind. University of Utah professor's portfolio.",
     },
   ]
-  const project5_proshop = [
-    {
-      name: 'ProShop eCommerce Platform',
-      gitlink: 'https://github.com/leftyloosey/khazad-aufheben',
-      deploy: 'https://khazad-aufheben-6509b1bdcf3e.herokuapp.com/',
-      img: green_proshop,
-      desc: 'MERN. Complete functioning business website with payment.',
-    },
-  ]
-  const project6_weather = [
-    {
-      name: 'Weather Forecast App',
-      gitlink: 'https://github.com/leftyloosey/khazad-aufheben',
-      deploy: 'https://leftyloosey.github.io/bertrand_russel_oliphaunt-6/',
-      img: green_weather,
-      desc: 'Fetch, CSS. Get a weather forecast for any city.',
-    },
-  ]
+  // const project5_proshop = [
+  //   {
+  //     name: 'ProShop eCommerce Platform',
+  //     gitlink: 'https://github.com/leftyloosey/khazad-aufheben',
+  //     deploy: 'https://khazad-aufheben-6509b1bdcf3e.herokuapp.com/',
+  //     img: green_proshop,
+  //     desc: 'MERN. Complete functioning business website with payment.',
+  //   },
+  // ]
+  // const project6_weather = [
+  //   {
+  //     name: 'Weather Forecast App',
+  //     gitlink: 'https://github.com/leftyloosey/khazad-aufheben',
+  //     deploy: 'https://leftyloosey.github.io/bertrand_russel_oliphaunt-6/',
+  //     img: green_weather,
+  //     desc: 'Fetch, CSS. Get a weather forecast for any city.',
+  //   },
+  // ]
   const project7_housing = [
     {
       name: 'Utah Housing Insecurity Project',
@@ -77,15 +77,15 @@ const Work = ({ isOpen2 }) => {
       desc: 'React, Tailwind. A research archive (photos + interviews) for the University of Utah',
     },
   ]
-  const project8_signup = [
-    {
-      name: 'Barbershop Signup App',
-      gitlink: 'https://github.com/leftyloosey/vernunft_anduril/tree/main',
-      deploy: 'https://blendz-a0e7082e8ee7.herokuapp.com/',
-      img: green_signup,
-      desc: "Mongo, Apollo, React, graphQL. 88Blendz Barbershop's dynamic haircut signup sheet and QRcode generator.",
-    },
-  ]
+  // const project8_signup = [
+  //   {
+  //     name: 'Barbershop Signup App',
+  //     gitlink: 'https://github.com/leftyloosey/vernunft_anduril/tree/main',
+  //     deploy: 'https://blendz-a0e7082e8ee7.herokuapp.com/',
+  //     img: green_signup,
+  //     desc: "Mongo, Apollo, React, graphQL. 88Blendz Barbershop's dynamic haircut signup sheet and QRcode generator.",
+  //   },
+  // ]
   return (
     <>
       <div
