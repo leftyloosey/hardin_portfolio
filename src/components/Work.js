@@ -15,9 +15,9 @@ const Project = lazy(() => import('./Project'))
 const Work = ({ isOpen2 }) => {
   const project0_funicular = [
     {
-      name: 'miniBBS Blog',
-      gitlink: 'https://github.com/leftyloosey/cirith-stuart-techblog',
-      deploy: 'https://cirith-blog.herokuapp.com/',
+      name: 'Kyiv-Funicular Language App',
+      gitlink: 'https://github.com/leftyloosey/kyiv-funicular',
+      deploy: 'https://kyiv-funicular.vercel.app/',
       img: green_funicular,
       desc: 'Angular, Angular Material, NestJS, RxJS, Wiktionary + Google Translate API',
     },
