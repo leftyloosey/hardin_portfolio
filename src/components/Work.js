@@ -4,14 +4,24 @@ import green_blendz from '../images/green_blendz_home.png'
 // import green_cirith from '../images/green_cirith_home.png'
 import green_malaia from '../images/green_malaia_home.png'
 // import green_setlists from '../images/green_setlists_home.jpg'
-// import green_proshop from '../images/green_proshop_home.png'
+import green_proshop from '../images/green_proshop_home.png'
 // import green_weather from '../images/green_weather_home.png'
 import green_housing from '../images/green_housing_swoop.jpg'
-// import green_signup from '../images/green_blendz_signup_home.jpg'
+import green_signup from '../images/green_blendz_signup_home.jpg'
+import green_funicular from '../images/green_funicular.jpg'
 
 const Project = lazy(() => import('./Project'))
 
 const Work = ({ isOpen2 }) => {
+  const project0_funicular = [
+    {
+      name: 'miniBBS Blog',
+      gitlink: 'https://github.com/leftyloosey/cirith-stuart-techblog',
+      deploy: 'https://cirith-blog.herokuapp.com/',
+      img: green_funicular,
+      desc: 'Angular, Angular Material, NestJS, RxJS, Wiktionary + Google Translate API',
+    },
+  ]
   const project1_blendz = [
     {
       name: '88Blendz Barbershop',
@@ -50,15 +60,15 @@ const Work = ({ isOpen2 }) => {
       desc: "React, Tailwind. University of Utah professor's portfolio.",
     },
   ]
-  // const project5_proshop = [
-  //   {
-  //     name: 'ProShop eCommerce Platform',
-  //     gitlink: 'https://github.com/leftyloosey/khazad-aufheben',
-  //     deploy: 'https://khazad-aufheben-6509b1bdcf3e.herokuapp.com/',
-  //     img: green_proshop,
-  //     desc: 'MERN. Complete functioning business website with payment.',
-  //   },
-  // ]
+  const project5_proshop = [
+    {
+      name: 'ProShop eCommerce Platform',
+      gitlink: 'https://github.com/leftyloosey/khazad-aufheben',
+      deploy: 'https://khazad-aufheben-6509b1bdcf3e.herokuapp.com/',
+      img: green_proshop,
+      desc: 'MERN. Complete functioning business website with payment.',
+    },
+  ]
   // const project6_weather = [
   //   {
   //     name: 'Weather Forecast App',
@@ -77,15 +87,15 @@ const Work = ({ isOpen2 }) => {
       desc: 'React, Tailwind. A research archive (photos + interviews) for the University of Utah',
     },
   ]
-  // const project8_signup = [
-  //   {
-  //     name: 'Barbershop Signup App',
-  //     gitlink: 'https://github.com/leftyloosey/vernunft_anduril/tree/main',
-  //     deploy: 'https://blendz-a0e7082e8ee7.herokuapp.com/',
-  //     img: green_signup,
-  //     desc: "Mongo, Apollo, React, graphQL. 88Blendz Barbershop's dynamic haircut signup sheet and QRcode generator.",
-  //   },
-  // ]
+  const project8_signup = [
+    {
+      name: 'Barbershop Signup App',
+      gitlink: 'https://github.com/leftyloosey/vernunft_anduril/tree/main',
+      deploy: 'https://blendz-a0e7082e8ee7.herokuapp.com/',
+      img: green_signup,
+      desc: "Mongo, Apollo, React, graphQL. 88Blendz Barbershop's dynamic haircut signup sheet and QRcode generator.",
+    },
+  ]
   return (
     <>
       <div
@@ -94,14 +104,17 @@ const Work = ({ isOpen2 }) => {
         }`}
       >
         <div className='basis-48 shrink-0 grow-0'>
+          <Project project={project0_funicular} />
+        </div>
+        <div className='basis-48 shrink-0 grow-0'>
           <Project project={project7_housing} />
         </div>
         <div className='basis-48 shrink-0 grow-0'>
           <Project project={project1_blendz} />
         </div>
-        {/* <div className='basis-48 shrink-0 grow-0'>
+        <div className='basis-48 shrink-0 grow-0'>
           <Project project={project8_signup} />
-        </div> */}
+        </div>
         <div className='basis-48 shrink-0 grow-0'>
           <Project project={project4_malaia} />
         </div>
@@ -113,10 +126,10 @@ const Work = ({ isOpen2 }) => {
         </div>
         <div className='basis-48 shrink-0 grow-0'>
           <Project project={project6_weather} />
-        </div>
+        </div> */}
         <div className='basis-48 shrink-0 grow-0'>
           <Project project={project5_proshop} />
-        </div> */}
+        </div>
       </div>
     </>
   )
